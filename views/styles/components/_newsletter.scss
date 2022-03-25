@@ -1,0 +1,103 @@
+.newsletter-container {
+	width: 100%;
+	border-top: 0.15rem solid $clr-dark-transparent;
+	text-align: center;
+	padding: 2rem 0;
+	.newsletter-content {
+		width: max-content;
+		margin: 0 auto;
+		position: relative;
+	}
+	.newsletter-title {
+		font-size: 1.5rem;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 300;
+		letter-spacing: 0.05rem;
+		p {
+			margin: 0;
+			margin-bottom: 2rem;
+		}
+		strong {
+			font-weight: 700;
+			letter-spacing: 0.1rem;
+		}
+	}
+
+	.signup {
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+		padding: 0 1rem;
+		min-width: 55vw;
+		max-width: 35rem;
+		* {
+			border: 0;
+			background-color: $clr-light-0;
+		}
+		#email {
+			width: calc(100% - 160px);
+			padding: 0.5rem 1rem;
+			border: 1px solid $clr-dark-transparent;
+			border-top-left-radius: 100vw;
+			border-bottom-left-radius: 100vw;
+		}
+
+		.signup-btn {
+			width: 11.5rem;
+			border-top-right-radius: 100vw;
+			border-bottom-right-radius: 100vw;
+			background-color: $clr-accent-0;
+			color: $font-color-light;
+			padding-inline: 1.5rem;
+			font-family: 'Poppins', sans-serif;
+			font-weight: 500;
+			cursor: pointer;
+			transition: background-color 100ms linear;
+			&:hover {
+				background-color: $clr-accent-1;
+			}
+
+			i {
+				background-color: inherit;
+			}
+		}
+	}
+
+	.socials {
+		ul {
+			list-style-type: none;
+			display: flex;
+			justify-content: center;
+			padding: 0;
+			margin: 0;
+			li {
+				font-size: 1.25rem;
+				margin: 1rem 0.5rem;
+				box-sizing: border-box;
+				height: 42px;
+				width: 42px;
+				border: 1px solid $clr-dark-transparent;
+				a {
+					color: $font-color-dark;
+					// padding: 0.5rem;
+					display: block;
+					width: 100%;
+					height: 100%;
+					display: grid;
+					place-items: center;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	.background-icon {
+		font-size: 12rem;
+		color: $clr-dark-transparent-0;
+		position: absolute;
+		height: max-content;
+		left: 0;
+		top: 50%;
+		transform: translate(-50%, -50%) rotate(20deg);
+		z-index: -1;
+	}
+}

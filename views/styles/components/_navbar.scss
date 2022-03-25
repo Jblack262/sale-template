@@ -8,13 +8,17 @@ nav {
 		place-items: center;
 		position: fixed;
 
+		z-index: 2;
+
 		top: 1rem;
 		left: 1rem;
 		.icon {
 			margin-block: auto;
-			color: $font-color-dark;
+			color: $font-color-light;
 			cursor: pointer;
 			font-weight: bold;
+
+			text-shadow: 0 0 2rem black, 0 0 0.5rem black;
 		}
 		input {
 			position: absolute;
@@ -27,18 +31,19 @@ nav {
 		}
 	}
 	.navContainer {
-		background-color: $clr-accent-1;
+		background-color: $clr-primary-1;
 		position: fixed;
 		height: 100%;
 		max-width: 16.25rem;
 		top: 0;
 		left: 0;
+		z-index: 3;
 
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 
-		box-shadow: 0 0 15px $clr-darkblue-3;
+		box-shadow: 0 0 15px $clr-primary-0;
 
 		transition: transform 300ms ease-in-out;
 		&.open {
@@ -79,15 +84,18 @@ nav {
 			cursor: pointer;
 
 			transition: transform 350ms ease-in-out;
-			.icon path {
-				stroke: $font-color-darkblue;
+			.icon {
+				color: $font-color-light;
 			}
 		}
 		.image-container {
 			width: 100%;
 			.logo {
-				max-width: 100%;
+				max-width: 90%;
 				display: block;
+				margin: 0.5rem auto;
+
+				filter: drop-shadow(0 0 16px $clr-light-transparent);
 			}
 		}
 
@@ -105,15 +113,15 @@ nav {
 				flex-direction: column;
 				justify-content: center;
 				li {
-					margin: 2rem 1rem;
-					padding-inline: 4rem;
+					margin: 2rem 3rem;
+					// padding-inline: 4rem;
 					font-size: 1.5em;
 
 					transition: transform 450ms ease;
 					transform: translateX(-100%);
 
 					a {
-						color: $font-color-darkblue;
+						color: $font-color-light;
 						font-weight: bold;
 						text-decoration: none;
 						position: relative;
@@ -124,7 +132,7 @@ nav {
 							height: 2px;
 							bottom: -3px;
 							left: 0;
-							background: $font-color-darkblue;
+							background: $clr-accent-0;
 
 							transition: transform 150ms ease 50ms;
 
@@ -154,7 +162,7 @@ nav {
 				display: flex;
 				justify-content: space-around;
 				li a {
-					color: $font-color-darkblue;
+					color: $font-color-light;
 				}
 			}
 		}

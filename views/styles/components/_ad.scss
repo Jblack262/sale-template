@@ -1,0 +1,50 @@
+.advertisement {
+	background-color: $clr-light-2;
+	width: 100%;
+	max-width: 100%;
+	overflow: hidden;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		max-height: 20rem;
+		@media screen and (max-width: 768px) {
+			display: none;
+			visibility: hidden;
+		}
+	}
+	.ad-content {
+		width: max-content;
+		flex-shrink: 0;
+		margin: 0 auto;
+		font-size: clamp(1rem, 2vw, 1.25rem);
+		h1 {
+			letter-spacing: 1px;
+			font-size: 2em;
+		}
+		p {
+			font-weight: 500;
+			font-size: 1.25em;
+		}
+		button {
+			color: $font-color-light;
+			width: max-content;
+			text-decoration: none;
+			background-color: $clr-accent-0;
+			border: none;
+
+			margin: 1rem auto;
+			margin-top: 0;
+			padding: 0.5rem 1rem;
+
+			display: block;
+			border-radius: 100vw;
+			font-size: 1em;
+		}
+	}
+}

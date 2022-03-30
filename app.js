@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const router = express.Router();
 
 
 //middleware
@@ -48,5 +47,3 @@ const start = async () => {
     } catch (error) { console.log(error) }
 }
 start();
-
-module.exports = router;

@@ -11,6 +11,10 @@ navigation.get('/', (req, res) => {
 navigation.get('/login', (req, res) => {
   res.render('pages/login')
 })
+//sign up page
+navigation.get('/sign-up', (req, res) => {
+  res.render('pages/signUp')
+})
 
 // ALL ADMIN PAGES HERE
 

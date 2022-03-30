@@ -1581,16 +1581,19 @@ footer .payment-container .copyright {
   font-size: 1em;
 }
 
-#loginForm {
+#loginForm,
+#signUpForm {
   background-color: #17161d;
   color: #f1f2f6;
 }
 
-#loginForm h1 {
+#loginForm h1,
+#signUpForm h1 {
   text-align: center;
 }
 
-#loginForm .inputs {
+#loginForm .inputs,
+#signUpForm .inputs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1602,18 +1605,23 @@ footer .payment-container .copyright {
   border-radius: 0.25rem;
 }
 
-#loginForm .inputs input {
+#loginForm .inputs input,
+#signUpForm .inputs input {
   border: none;
   outline: none;
   border-bottom: 1px solid #00000022;
   padding: 0.75rem 1rem;
 }
 
-#loginForm .inputs input:last-of-type {
+#loginForm .inputs input:last-of-type,
+#signUpForm .inputs input:last-of-type {
   border: none;
 }
 
-#loginForm .login {
+#loginForm .login,
+#loginForm .signIn,
+#signUpForm .login,
+#signUpForm .signIn {
   color: currentColor;
   background-color: #d51e27;
   border: none;
@@ -1624,11 +1632,18 @@ footer .payment-container .copyright {
   cursor: pointer;
 }
 
-#loginForm .login:hover, #loginForm .login:focus-within {
+#loginForm .login:hover, #loginForm .login:focus-within,
+#loginForm .signIn:hover,
+#loginForm .signIn:focus-within,
+#signUpForm .login:hover,
+#signUpForm .login:focus-within,
+#signUpForm .signIn:hover,
+#signUpForm .signIn:focus-within {
   background-color: #a8181f;
 }
 
-#loginForm .form-error {
+#loginForm .form-error,
+#signUpForm .form-error {
   color: #f1f2f6;
   text-align: center;
   margin: 0;

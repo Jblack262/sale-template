@@ -1,4 +1,5 @@
-#loginForm {
+#loginForm,
+#signUpForm {
 	background-color: $clr-primary-0;
 	color: $font-color-light;
 	h1 {
@@ -19,7 +20,8 @@
 			}
 		}
 	}
-	.login {
+	.login,
+	.signIn {
 		color: currentColor;
 		background-color: $clr-accent-0;
 		border: none;

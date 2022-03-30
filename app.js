@@ -42,7 +42,7 @@ app.use('/api/v1/user', require('./routes/loginRoutes.js'))
 const start = async () => {
     try {
         await connectDB(process.env.MONGO_URI);
-        // await populateProducts()
+        await populateProducts()
         app.listen(port, console.log(`server is listening on port ${port}`));
     } catch (error) { console.log(error) }
 }

@@ -1,0 +1,32 @@
+[
+  {
+    "image":"https://preview.colorlib.com/theme/electro/img/xshop03.png.pagespeed.ic.7lsQL1UJA9.webp",
+    "name": "Cool Headphones",
+    "price": 149.99,
+    "rating": 0
+  },
+  {
+    "image":"https://preview.colorlib.com/theme/electro/img/xshop01.png.pagespeed.ic.YgJRjyP3IB.webp",
+    "name": "Cool Laptop",
+    "price": 999.99,
+    "rating": 1
+  },
+  {
+    "image":"https://preview.colorlib.com/theme/electro/img/xshop02.png.pagespeed.ic.JMo4guOhuU.webp",
+    "name": "Cool Camera",
+    "price": 119.99,
+    "rating": 2.5
+  },
+  {
+    "image":"https://pngimg.com/uploads/smartphone/smartphone_PNG8536.png",
+    "name": "Phone",
+    "price": 499.99,
+    "rating": 4
+  },
+  {
+    "image":"https://preview.colorlib.com/theme/electro/img/xshop03.png.pagespeed.ic.7lsQL1UJA9.webp",
+    "name": "Cool Headphones",
+    "price": 99.99,
+    "rating": 5
+  }
+]

@@ -1091,7 +1091,7 @@ footer .payment-container .copyright {
 
 @media screen and (max-width: 512px) {
   .banner {
-    padding: 1rem 2rem;
+    padding: 1rem 0.5rem;
   }
   .banner .banner-title {
     margin: 0 auto 1rem auto;
@@ -1582,8 +1582,8 @@ footer .payment-container .copyright {
 }
 
 #loginForm {
-  background-color: #487eb0;
-  color: #f5f6fa;
+  background-color: #17161d;
+  color: #f1f2f6;
 }
 
 #loginForm h1 {
@@ -1599,7 +1599,7 @@ footer .payment-container .copyright {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
-  border-radius: 1rem;
+  border-radius: 0.25rem;
 }
 
 #loginForm .inputs input {
@@ -1615,77 +1615,21 @@ footer .payment-container .copyright {
 
 #loginForm .login {
   color: currentColor;
-  background-color: #353b48;
+  background-color: #d51e27;
   border: none;
   width: 100%;
   padding: 0.75rem;
   margin: 1rem 0;
-  border-radius: 1rem;
+  border-radius: 0.25rem;
   cursor: pointer;
 }
 
 #loginForm .login:hover, #loginForm .login:focus-within {
-  background-color: #2f3640;
+  background-color: #a8181f;
 }
 
 #loginForm .form-error {
-  color: #2d3436;
-  text-align: center;
-  margin: 0;
-  display: none;
-  visibility: hidden;
-}
-
-#signUpForm {
-  background-color: #f5f6fa;
-  color: #2d3436;
-}
-
-#signUpForm h1 {
-  text-align: center;
-}
-
-#signUpForm .inputs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  overflow: hidden;
-  border-radius: 1rem;
-  border: 1px solid #00000022;
-}
-
-#signUpForm .inputs input {
-  border: none;
-  outline: none;
-  border-bottom: 1px solid #00000022;
-  padding: 0.75rem 1rem;
-}
-
-#signUpForm .inputs input:last-of-type {
-  border: none;
-}
-
-#signUpForm .signIn {
-  color: #f5f6fa;
-  background-color: #487eb0;
-  border: none;
-  width: 100%;
-  padding: 0.75rem;
-  margin: 1rem 0;
-  border-radius: 1rem;
-  cursor: pointer;
-}
-
-#signUpForm .signIn:hover, #signUpForm .signIn:focus-within {
-  background-color: #3a6996;
-}
-
-#signUpForm .form-error {
-  color: #2d3436;
+  color: #f1f2f6;
   text-align: center;
   margin: 0;
   display: none;
@@ -1699,9 +1643,16 @@ footer .payment-container .copyright {
   padding: 5rem 3rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 1rem;
+  border-radius: 0.75rem;
   -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
           box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+@media screen and (max-width: 380px) {
+  #loginForm,
+  #signUpForm {
+    padding-inline: 1rem;
+  }
 }
 
 #loginForm .loginOption,

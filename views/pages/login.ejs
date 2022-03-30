@@ -6,7 +6,7 @@
 <body class="container">
 
   <div class="forms-container">
-    <form id="loginForm">
+    <form id="loginForm" action="/api/v1/user/login" method="post">
       <h1>Sign In</h1>
       <div class="inputs">
         <input type="text" name="username" id="username" placeholder="Username" required>
@@ -14,12 +14,11 @@
       </div>
   
       <button type="submit" class="login">Sign In</button>
-      <button type="button" class="loginOption"><a href="/sign-up">Or Sign-Up</a></button>
+      <button type="button" class="loginOption"><a href="/">Back to Home</a></button>
   
       <p class="form-error">There Has Been an Error</p>
     </form>
   </div>
 
-  <script type="module" src="../scripts/login.js"></script>
 </body>
 </html>
